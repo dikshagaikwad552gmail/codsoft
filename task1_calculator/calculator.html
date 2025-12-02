@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="mr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Calculator (Human Style)</title>
+    <link rel="stylesheet" href="calculators.css">
+</head>
+
+<body>
+
+    <div class="calc">
+        <div class="display">
+            <div class="history" id="history"></div>
+            <div class="screen" id="screen">0</div>
+        </div>
+
+        <div class="pad" id="pad">
+            <button class="clr" data-action="clear">C</button>
+            <button data-action="plusminus">±</button>
+            <button data-action="percent">%</button>
+            <button class="op" data-action="operator" data-value="/">/</button>
+
+            <button data-action="digit" data-value="7">7</button>
+            <button data-action="digit" data-value="8">8</button>
+            <button data-action="digit" data-value="9">9</button>
+            <button class="op" data-action="operator" data-value="*">*</button>
+
+            <button data-action="digit" data-value="4">4</button>
+            <button data-action="digit" data-value="5">5</button>
+            <button data-action="digit" data-value="6">6</button>
+            <button class="op" data-action="operator" data-value="-">-</button>
+
+            <button data-action="digit" data-value="1">1</button>
+            <button data-action="digit" data-value="2">2</button>
+            <button data-action="digit" data-value="3">3</button>
+            <button class="op" data-action="operator" data-value="+">+</button>
+
+            <button class="wide" data-action="digit" data-value="0">0</button>
+            <button data-action="digit" data-value=".">.</button>
+            <button class="eq" data-action="evaluate">=</button>
+
+            <button data-action="backspace">⌫</button>
+            <button data-action="lparen">(</button>
+            <button data-action="rparen">)</button>
+        </div>
+    </div>
+
+    <script src="calculato.js"></script>
+</body>
+
+</html>
